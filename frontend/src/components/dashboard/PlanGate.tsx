@@ -16,7 +16,7 @@ export default function PlanGate({ feature, children, overlay = false, label }: 
   const { user } = useAuth();
   const [modalOpen, setModalOpen] = useState(false);
 
-  const featureMap: Record<string, keyof typeof user> = {
+  const featureMap: Record<string, typeof user> = {
     url_scraping: 'allow_url_scraping',
     db_connect: 'allow_db_connect',
     analytics: 'allow_analytics',

@@ -11,6 +11,7 @@ interface User {
   messages_used_this_month?: number;
   allow_url_scraping?: boolean; allow_db_connect?: boolean;
   allow_analytics?: boolean; allow_branding_removal?: boolean;
+  allow_api_access?:boolean
 }
 
 interface AuthContextType {

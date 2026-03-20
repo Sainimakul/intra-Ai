@@ -161,7 +161,8 @@ export default function BotDetailPage() {
             <Trash2 className="w-4 h-4" />
           </button>
           {tab === 'settings' || tab === 'appearance' ? (
-            <button onClick={save} disabled={saving} disabled={bot?.is_over_limit} className={`btn-primary ${bot?.is_over_limit ? "opacity-50 cursor-not-allowed" : ""}`}>
+            <button onClick={save}   disabled={saving || bot?.is_over_limit}
+ className={`btn-primary ${bot?.is_over_limit ? "opacity-50 cursor-not-allowed" : ""}`}>
               {saving ? <><Loader2 className="w-4 h-4 animate-spin" /> Saving...</> : <><Save className="w-4 h-4" /> Save</>}
             </button>
           ) : null}

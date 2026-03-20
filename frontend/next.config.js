@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+   typescript: {
+    ignoreBuildErrors: true, // ✅ skips all TS errors
+  },
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: '**' },

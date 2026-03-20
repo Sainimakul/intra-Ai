@@ -67,8 +67,10 @@ export default function MessagesPage() {
     setLoading(true);
     try {
       const params = new URLSearchParams({ page: String(p), limit: String(LIMIT), ...f });
-      // Remove empty params
-      [...params.keys()].forEach(k => { if (!params.get(k)) params.delete(k); });
+      // Remove empty params`
+params.forEach((value, key) => {
+  if (!value) params.delete(key);
+});
       const r = await api.get(`/analytics/conversations?${params}`);
       setConversations(r.data.conversations || []);
       setTotal(r.data.total || 0);
