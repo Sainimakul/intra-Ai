@@ -74,12 +74,6 @@ export default function LoginPage() {
         </p>
       </div>
 
-      {/* Demo credentials hint */}
-      <div className="mt-4 card p-4 bg-blue-50 border-blue-100">
-        <p className="text-xs text-blue-600 font-medium text-center">
-          Admin demo: admin@intra-ai.com / Admin@123
-        </p>
-      </div>
     </div>
   );
 }

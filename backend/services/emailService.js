@@ -39,7 +39,7 @@ const emailTemplate = (content) => `
     .body { padding: 32px; }
     .body h2 { color: #1e293b; }
     .body p { color: #475569; line-height: 1.6; }
-    .btn { display: inline-block; background: linear-gradient(135deg, #2563EB, #7C3AED); color: white;
+    .btn { display: inline-block; background: linear-gradient(135deg, #2563EB, #7C3AED); color: rgba(255,255,255,0.8);
            padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600;
            font-size: 16px; margin: 16px 0; }
     .footer { padding: 24px 32px; text-align: center; color: #94a3b8; font-size: 12px; border-top: 1px solid #f1f5f9; }
@@ -71,7 +71,18 @@ const verificationEmail = async (email, name, token) => {
     <h2>Welcome, ${name}! 🎉</h2>
     <p>Thanks for signing up for INTRA AI. Please verify your email address to get started.</p>
     <div style="text-align: center;">
-      <a href="${verifyUrl}" class="btn">Verify Email Address</a>
+     <a href="${verifyUrl}" 
+   style="display:inline-block;
+          background: linear-gradient(135deg, #2563EB, #7C3AED);
+          color:#ffffff;
+          padding:14px 32px;
+          border-radius:8px;
+          text-decoration:none;
+          font-weight:600;
+          font-size:16px;
+          margin:16px 0;">
+   Verify Email Address
+</a>
     </div>
     <p style="color: #94a3b8; font-size: 13px;">This link expires in 24 hours. If you didn't register, ignore this email.</p>
     <p style="color: #94a3b8; font-size: 13px;">Or copy this link: ${verifyUrl}</p>
@@ -89,7 +100,18 @@ const passwordResetEmail = async (email, name, token) => {
     <h2>Reset Your Password</h2>
     <p>Hi ${name}, we received a request to reset your password.</p>
     <div style="text-align: center;">
-      <a href="${resetUrl}" class="btn">Reset Password</a>
+    <a href="${resetUrl}" 
+   style="display:inline-block;
+          background: linear-gradient(135deg, #2563EB, #7C3AED);
+          color:#ffffff;
+          padding:14px 32px;
+          border-radius:8px;
+          text-decoration:none;
+          font-weight:600;
+          font-size:16px;
+          margin:16px 0;">
+   Verify Email Address
+</a>
     </div>
     <p style="color: #94a3b8; font-size: 13px;">This link expires in 1 hour.</p>
   `;
@@ -105,6 +127,18 @@ const welcomeEmail = async (email, name, planName) => {
     <h2>You're all set, ${name}! 🚀</h2>
     <p>Your <strong>${planName}</strong> plan is now active. Start building your first AI chatbot today!</p>
     <div style="text-align: center;">
+    <a href="${process.env.FRONTEND_URL}/dashboard" 
+   style="display:inline-block;
+          background: linear-gradient(135deg, #2563EB, #7C3AED);
+          color:#ffffff;
+          padding:14px 32px;
+          border-radius:8px;
+          text-decoration:none;
+          font-weight:600;
+          font-size:16px;
+          margin:16px 0;">
+   Verify Email Address
+</a>
       <a href="${process.env.FRONTEND_URL}/dashboard" class="btn">Go to Dashboard</a>
     </div>
   `;
