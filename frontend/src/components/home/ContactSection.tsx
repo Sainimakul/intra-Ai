@@ -40,8 +40,8 @@ export default function ContactSection() {
             <div className="card p-6">
               <h3 className="font-bold text-gray-900 text-lg mb-5">Let's talk</h3>
               {[
-                { icon: Mail, label: 'Email', value: 'hello@intra-ai.com', href: 'mailto:hello@intra-ai.com' },
-                { icon: MessageSquare, label: 'Support', value: 'support@intra-ai.com', href: 'mailto:support@intra-ai.com' },
+                { icon: Mail, label: 'Email', value: 'hello@update.makulsaini.online', href: 'hello@update.makulsaini.online' },
+                { icon: MessageSquare, label: 'Support', value: 'support@update.makulsaini.online', href: 'mailto:support@update.makulsaini.online' },
                 { icon: Clock, label: 'Response time', value: 'Within 24 hours', href: null },
                 { icon: MapPin, label: 'Based in', value: 'India 🇮🇳', href: null },
               ].map(item => (
