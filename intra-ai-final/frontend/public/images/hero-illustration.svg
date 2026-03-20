@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#F0F9FF" rx="16"/>
+  <!-- Chat window -->
+  <rect x="50" y="40" width="300" height="320" rx="16" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="50" y="40" width="300" height="48" rx="16" fill="#2563EB"/>
+  <rect x="50" y="72" width="300" height="16" fill="#2563EB"/>
+  <circle cx="82" cy="64" r="12" fill="white" opacity="0.3"/>
+  <text x="102" y="69" font-family="Arial" font-size="13" fill="white" font-weight="bold">INTRA AI Bot</text>
+  <!-- Chat messages -->
+  <rect x="70" y="108" width="160" height="36" rx="12" fill="#EFF6FF"/>
+  <rect x="190" y="156" width="140" height="36" rx="12" fill="#2563EB"/>
+  <rect x="70" y="204" width="180" height="36" rx="12" fill="#EFF6FF"/>
+  <rect x="170" y="252" width="160" height="36" rx="12" fill="#2563EB"/>
+  <!-- Input -->
+  <rect x="66" y="316" width="268" height="36" rx="18" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+  <!-- Floating cards -->
+  <rect x="390" y="60" width="180" height="90" rx="12" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+  <circle cx="418" cy="90" r="16" fill="#EFF6FF"/>
+  <text x="416" y="96" font-family="Arial" font-size="14" fill="#2563EB" text-anchor="middle">🤖</text>
+  <rect x="445" y="80" width="100" height="8" rx="4" fill="#CBD5E1"/>
+  <rect x="445" y="96" width="75" height="6" rx="3" fill="#E2E8F0"/>
+  <rect x="390" y="170" width="180" height="90" rx="12" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+  <circle cx="418" cy="200" r="16" fill="#F0FDF4"/>
+  <text x="416" y="206" font-family="Arial" font-size="14" fill="#16A34A" text-anchor="middle">📊</text>
+  <rect x="445" y="190" width="100" height="8" rx="4" fill="#CBD5E1"/>
+  <rect x="445" y="206" width="75" height="6" rx="3" fill="#E2E8F0"/>
+  <rect x="390" y="280" width="180" height="90" rx="12" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+  <circle cx="418" cy="310" r="16" fill="#FFF7ED"/>
+  <text x="416" y="316" font-family="Arial" font-size="14" fill="#EA580C" text-anchor="middle">⚙️</text>
+  <rect x="445" y="300" width="100" height="8" rx="4" fill="#CBD5E1"/>
+  <rect x="445" y="316" width="75" height="6" rx="3" fill="#E2E8F0"/>
+</svg>
