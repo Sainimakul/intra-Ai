@@ -13,6 +13,7 @@ const app = express();
 app.use(helmet({ crossOriginEmbedderPolicy: false }));
 app.use(compression());
 app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
+console.log(process.env.FRONTEND_URL)
 app.use(cors({
   origin: process.env.FRONTEND_URL || 'http://localhost:3000',
   credentials: true,

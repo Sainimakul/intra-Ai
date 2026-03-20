@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+.next/
+dist/
+build/
+*.log
+uploads/pdfs/*
+uploads/temp/*
+!uploads/pdfs/.gitkeep
+!uploads/temp/.gitkeep
+.DS_Store
+Thumbs.db

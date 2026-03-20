@@ -12,7 +12,9 @@ export const metadata: Metadata = {
     description: 'Create, train, and deploy intelligent AI chatbots in minutes.',
     type: 'website',
   },
-  icon:'/favicon.svg'
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

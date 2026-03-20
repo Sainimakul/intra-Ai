@@ -9,7 +9,7 @@ async function listModels() {
   console.log("Available Models:", JSON.stringify(data, null, 2));
 }
 
-listModels();
+// listModels();
 // ─── Generate AI Response ─────────────────────────────────────────────────────
 const generateResponse = async ({
   systemPrompt,
