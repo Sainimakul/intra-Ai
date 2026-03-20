@@ -2,12 +2,12 @@
   "name": "intra-ai-backend",
   "version": "1.0.0",
   "description": "INTRA AI Backend API",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "migrate": "node src/config/migrate.js",
-    "seed": "node src/config/seed.js"
+    "start": "node index.js",
+    "dev": "nodemon ndex.js",
+    "migrate": "node config/migrate.js",
+    "seed": "node config/seed.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
