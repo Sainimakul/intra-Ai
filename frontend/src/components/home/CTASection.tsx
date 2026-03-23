@@ -57,15 +57,15 @@ export function Footer() {
 
           {/* Links */}
           {[
-            { title: 'Product', links: ['Features', 'Pricing', 'Changelog', 'Roadmap'] },
-            { title: 'Company', links: ['About', 'Blog', 'Careers', 'Contact'] },
-            { title: 'Legal', links: ['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'GDPR'] },
+            { title: 'Product', links: [['Features','/#features'],['Pricing','/#pricing'],['Changelog','/changelog'],['Roadmap','/roadmap']] },
+            { title: 'Company', links: [['About','/about'],['Blog','/blog'],['Careers','/careers'],['Contact','/#contact']] },
+            { title: 'Legal',   links: [['Privacy Policy','/privacy'],['Terms of Service','/terms'],['Cookie Policy','/cookies'],['GDPR','/gdpr']] },
           ].map(col => (
             <div key={col.title}>
               <h4 className="text-white font-semibold text-sm mb-3">{col.title}</h4>
               <ul className="space-y-2">
-                {col.links.map(l => (
-                  <li key={l}><a href="#" className="text-sm hover:text-white transition-colors">{l}</a></li>
+                {col.links.map(([label, href]) => (
+                  <li key={label}><a href={href} className="text-sm hover:text-white transition-colors">{label}</a></li>
                 ))}
               </ul>
             </div>
