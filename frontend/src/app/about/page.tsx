@@ -65,7 +65,7 @@ export default function AboutPage() {
           <p className="text-gray-500 mb-6">Start for free. No credit card required.</p>
           <div className="flex gap-3 justify-center">
             <Link href="/auth/register" className="btn-primary px-8 py-3">Get started free</Link>
-            <Link href="/contact" className="btn-secondary px-8 py-3">Contact us</Link>
+            <Link href="/#contact" className="btn-secondary px-8 py-3">Contact us</Link>
           </div>
         </div>
       </div>
